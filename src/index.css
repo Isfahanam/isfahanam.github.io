@@ -13,8 +13,23 @@
 
 @theme {
   --font-family: "Vazirmatn", sans-serif;
-  --color-primary: #2a3354;
-  --color-secondary: #ffd95a;
+
+  --color-primary: #1f8a9c;
+  --color-primary-light: #4fb3bf;
+  --color-primary-dark: #13636f;
+
+  --color-secondary: #8b6b4f;
+  --color-secondary-light: #b89b82;
+  --color-secondary-dark: #5f4632;
+
+  --color-bg: #f5f4f0;
+  --color-surface: #ffffff;
+
+  --color-text-primary: #243333;
+  --color-text-secondary: #5f6f73;
+  --color-text-inverse: #ffffff;
+
+  --color-border: #e1ded8;
 }
 
 @layer base {
