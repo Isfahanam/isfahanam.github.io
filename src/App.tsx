@@ -12,10 +12,12 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
   const RouterComponent = import.meta.env.PROD ? HashRouter : BrowserRouter;
+  // const RouterComponent = HashRouter;
   console.log(import.meta.env.BASE_URL, import.meta.env);
 
   return (
-    <HashRouter basename={import.meta.env.BASE_URL}>
+    <RouterComponent>
+    {/* <HashRouter basename={import.meta.env.BASE_URL}> */}
       <Routes>
         <Route path="/" element={<LoadingPage />} />
         <Route path="/home" element={<HomePage />} />
@@ -28,6 +30,7 @@ export default function App() {
         <Route path="/map" element={<MapPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </HashRouter>
+    </RouterComponent>
+    // </HashRouter>
   );
 }
