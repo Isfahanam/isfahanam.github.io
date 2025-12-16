@@ -1,0 +1,13 @@
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.has-bottom-nav main {
+  padding-bottom: calc(64px + env(safe-area-inset-bottom) + 12px);
+}

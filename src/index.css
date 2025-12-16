@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+@import './styles/fonts.css';
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@theme {
+  --font-family: "Vazirmatn", sans-serif;
+  --color-primary: #2a3354;
+  --color-secondary: #ffd95a;
+}
+
+@layer base {
+  html, body, #root {
+    font-family: "Vazirmatn", sans-serif;
+  }
+  
+  * {
+    font-family: "Vazirmatn", sans-serif;
+  }
+}
